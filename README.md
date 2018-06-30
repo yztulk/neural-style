@@ -7,3 +7,4 @@
 - The -init parameter is by default set to random, though from what I have seen, most people get better results by setting it to image.
 - use tiling to create high res pictures: https://github.com/ProGamerGov/Neural-Tile/
 - Check this out to creat high res pictures: https://github.com/jcjohnson/neural-style/wiki/Techniques-For-Increasing-Image-Quality-Without-Buying-a-Better-GPU
+- Check this script and how to increase the pic resolution: https://pastebin.com/YV4JC5Jn
