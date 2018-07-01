@@ -17,6 +17,6 @@ th ~/neural-style/neural_style.lua \
 echo "$(date) all interations completed" >> log.txt
 cd ~/Documents/outputs/
 tar -zcvf results.tar.gz ~/Documents/outputs/
-echo "Results from neural-style" | mutt -a "results.tar.gz" -s "neural-style results" -- roybout@gmail.com
+echo "Results from neural-style" | mutt -a "results.tar.gz" -s "neural-style results" -- [emailaddress]
 echo "$(date) email sent and the system has been shut down" >> log.txt
 sudo shutdown
