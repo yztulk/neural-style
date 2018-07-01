@@ -55,7 +55,7 @@ luarocks install cudnn
 sudo apt-get install mutt
 
 //Run neural-style
-cd ~/neural-style && sh ~/Documents/scripts/execution_script_aws.sh
+sh ~/Documents/scripts/execution_script_aws.sh
 
 //Copy output to Mac - run from local terminal
 scp -i ~/.ssh/certificates/[filename].pem ubuntu@[ipaddress]:~/Documents/outputs/* ~/Documents/neural-style/aws_outputs/
