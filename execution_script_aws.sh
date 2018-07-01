@@ -19,4 +19,4 @@ cd ~/Documents/outputs/
 tar -zcvf results.tar.gz ~/Documents/outputs/
 echo "Results from neural-style" | mutt -a "results.tar.gz" -s "neural-style results" -- roybout@gmail.com
 echo "$(date) email sent and the system has been shut down" >> log.txt
-sudo sudo shutdown
+sudo shutdown
