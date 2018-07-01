@@ -51,6 +51,9 @@ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
 luarocks install cudnn
 
+//Install email server
+sudo apt-get install mutt
+
 //Run neural-style
 cd ~/neural-style && sh ~/Documents/scripts/execution_script_aws.sh
 
