@@ -16,3 +16,6 @@ You can apply other neural networks as well, see https://github.com/jcjohnson/ne
 - Check this script and how to increase the pic resolution: https://pastebin.com/YV4JC5Jn
 - https://letsenhance.io/boost allows you to increase pic resolution size with very good results. This is a paid service though. You can run it yourself as well, see here https://medium.com/machine-learning-world/how-to-replicate-lets-enhance-service-without-even-coding-3b6b31b0fa2e
 Search google for image scaling neural networks "scale image neural network github"
+
+# Other
+- Some parameters in jcjohnson have scientific notations like 1e2, 5e0 and 1e-3. To convert to decimals go to https://coolconversion.com/math/scientific-notation-to-decimal/. 1e2 is 100, 5e0 is 5 and 1e-3 is 0.001. 
