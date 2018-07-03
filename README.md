@@ -11,6 +11,7 @@
 You can apply other neural networks as well, see https://github.com/jcjohnson/neural-style/wiki/Using-Other-Neural-Models. I find that the standard model does not really do well on faces. This model in particular 'Rough_Faces by ProGamerGov' says that it improves the preservation of facial features. See here examples https://imgur.com/a/tArrY.
 
 # High-res pictures
+- jcjohson: "Resolution is constrained by memory". You can use a multi-gpu strategy though to create higher resolution output.
 - use tiling to create high res pictures: https://github.com/ProGamerGov/Neural-Tile/
 - Check this out to create high res pictures: https://github.com/jcjohnson/neural-style/wiki/Techniques-For-Increasing-Image-Quality-Without-Buying-a-Better-GPU
 - Check this script and how to increase the pic resolution: https://pastebin.com/YV4JC5Jn
