@@ -7,7 +7,7 @@
 - The -init parameter is by default set to random, though from what I have seen, most people get better results by setting it to image.
 
 # Training models
-You can apply other neural networks as well, see https://github.com/jcjohnson/neural-style/wiki/Using-Other-Neural-Models. If find that the standard model does not really do well on faces. This model in particular 'Rough_Faces by ProGamerGov' says that it improves the preservation of facial features. See here examples https://imgur.com/a/tArrY.
+You can apply other neural networks as well, see https://github.com/jcjohnson/neural-style/wiki/Using-Other-Neural-Models. I find that the standard model does not really do well on faces. This model in particular 'Rough_Faces by ProGamerGov' says that it improves the preservation of facial features. See here examples https://imgur.com/a/tArrY.
 
 # High-res pictures
 - use tiling to create high res pictures: https://github.com/ProGamerGov/Neural-Tile/
