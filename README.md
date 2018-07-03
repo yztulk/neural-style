@@ -19,3 +19,5 @@ Search google for image scaling neural networks "scale image neural network gith
 
 # Other
 - Some parameters in jcjohnson have scientific notations like 1e2, 5e0 and 1e-3. To convert to decimals go to https://coolconversion.com/math/scientific-notation-to-decimal/. 1e2 is 100, 5e0 is 5 and 1e-3 is 0.001. 
+- the -init is a method for generating the generated image. You can choose either random or image. Default is random which uses a noise initialization as in the paper; image initializes with the content image. So if you want to initialize from a specific image then you need to pass -init image and give the path to your initialization image in -init_image.
+
