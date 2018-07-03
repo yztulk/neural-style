@@ -5,6 +5,7 @@
 - play with Multiple Style Images
 - enlarge pictures throug AI tool
 - The -init parameter is by default set to random, though from what I have seen, most people get better results by setting it to image.
+- Check out other neural network style tranfser techniques: https://github.com/jcjohnson/neural-style/wiki/Similar-to-Neural-Style
 
 # Training models
 You can apply other neural networks as well, see https://github.com/jcjohnson/neural-style/wiki/Using-Other-Neural-Models. I find that the standard model does not really do well on faces. This model in particular 'Rough_Faces by ProGamerGov' says that it improves the preservation of facial features. See here examples https://imgur.com/a/tArrY.
