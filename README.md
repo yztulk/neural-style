@@ -8,8 +8,6 @@
 - Check out other neural network style tranfser techniques: https://github.com/jcjohnson/neural-style/wiki/Similar-to-Neural-Style
 - Check out this https://gist.github.com/ProGamerGov/f650a80c39fc2d3d5139be9ff1fbf0d9 lua implementation. It contains a minor change to the neural_style.lua in that it removes the unneeded dropout layers entirely. vic8760 applies it so check it out.
 
-vic8760 uses it.
-
 # Training models
 You can apply other neural networks as well, see https://github.com/jcjohnson/neural-style/wiki/Using-Other-Neural-Models. I find that the standard model does not really do well on faces. This model in particular 'Rough_Faces by ProGamerGov' says that it improves the preservation of facial features. See here examples https://imgur.com/a/tArrY.
 
