@@ -63,8 +63,7 @@ curl -Lb ./cookie "https:#drive.google.com/uc?export=download&confirm=`awk '/dow
 sh download.sh
 
 //Download model pascalcontext-fcn32s-heavy.caffemodel
-cd ~/neural-style/models
-wget http://dl.caffe.berkeleyvision.org/pascalcontext-fcn32s-heavy.caffemodel
+cd ~/neural-style/models && wget http://dl.caffe.berkeleyvision.org/pascalcontext-fcn32s-heavy.caffemodel
 
 //Install email server
 sudo apt-get install mutt
