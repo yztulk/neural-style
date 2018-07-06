@@ -28,4 +28,5 @@ You can apply other neural networks as well, see https://github.com/jcjohnson/ne
 
 # vic8760 uses these models:
 - nin_imagenet_conv
-- pascalcontext-fcn32s-heavy.caffemodel
+- pascalcontext-fcn32s-heavy
+- VGG_ILSVRC_19_layers
