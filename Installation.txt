@@ -51,6 +51,17 @@ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
 luarocks install cudnn
 
+//Download model through a script as the model is stored on google drive
+touch download.sh && nano download.sh
+//Copy and paste this script
+#!/bin/bash
+fileid="0B0IedYUunOQIdGRWOG5kRXpldFk"
+filename="nin_imagenet_conv.caffemodel"
+curl -c ./cookie -s -L "https:#drive.google.com/uc?export=download&id=${fileid}" > /dev/null
+curl -Lb ./cookie "https:#drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=${fileid}" -o ${filename}
+//Replace fileid and filename and save the file
+sh download.sh
+
 //Install email server
 sudo apt-get install mutt
 
