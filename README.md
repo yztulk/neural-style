@@ -30,3 +30,6 @@ You can apply other neural networks as well, see https://github.com/jcjohnson/ne
 - nin_imagenet_conv
 - pascalcontext-fcn32s-heavy
 - VGG_ILSVRC_19_layers
+
+# Content and Style Layers
+The lower the layer numbers, the more closer it is to the image, anything past Relu4_4 to relu5_4 is pure abstract.
