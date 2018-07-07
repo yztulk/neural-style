@@ -33,3 +33,11 @@ You can apply other neural networks as well, see https://github.com/jcjohnson/ne
 
 # Content and Style Layers
 The lower the layer numbers, the more closer it is to the image, anything past Relu4_4 to relu5_4 is pure abstract. See this http://i.imgur.com/b6ngkPt.jpg for pictures per layer.
+
+ReLU (Rectified Linear Units) Layers
+
+Lower layers contain channels that are activated by for example, lines in different directions, or when the entire convolutional kernel is one color, or any other basic pixel level shape.
+
+The next layer is activated by patterns in the activation of the lower layers. Here's where it starts getting harder to interpret what they actually detect. These channels respond to combinations of the more primitive things it's learned in the previous layer, like shapes or textures.
+
+The highest layers encode the most abstract and complex things (once again based on patterns in the activations of the previous layers). A certain combination of lines, textures, and shapes all in the same part of the image might always activate together when there's a dog in the picture. This could cause one of these higher channels to be a kind of 'dog indicator' which activates whenever there's a dog in the picture. However, if the network wasn't trained on squirrels (which also happen to be furry and have dog-like heads) it might also activate and falsely claim that the squirrel in the picture is a dog!
