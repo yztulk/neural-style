@@ -4,6 +4,7 @@
 - run neural-style with more GPUs to generate higher resolution pictures
 - play with Multiple Style Images
 - enlarge pictures throug AI tool
+- cannot run neural-style with NVIDIA cuDNN. Error occur. Try to fix it.
 - The -init parameter is by default set to random, though from what I have seen, most people get better results by setting it to image.
 - Check out other neural network style tranfser techniques: https://github.com/jcjohnson/neural-style/wiki/Similar-to-Neural-Style
 - Check out this https://gist.github.com/ProGamerGov/f650a80c39fc2d3d5139be9ff1fbf0d9 lua implementation. It contains a minor change to the neural_style.lua in that it removes the unneeded dropout layers entirely. vic8760 applies it so check it out.
