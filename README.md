@@ -32,4 +32,4 @@ You can apply other neural networks as well, see https://github.com/jcjohnson/ne
 - VGG_ILSVRC_19_layers
 
 # Content and Style Layers
-The lower the layer numbers, the more closer it is to the image, anything past Relu4_4 to relu5_4 is pure abstract.
+The lower the layer numbers, the more closer it is to the image, anything past Relu4_4 to relu5_4 is pure abstract. See this http://i.imgur.com/b6ngkPt.jpg for pictures per layer.
