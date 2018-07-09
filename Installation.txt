@@ -32,7 +32,7 @@ scp -i ~/.ssh/certificates/[filename].pem ~/Documents/neural-style/fast-style-tr
 scp -i ~/.ssh/certificates/[filename].pem content_image/* ubuntu@[ipaddress]:~/Documents/content
 scp -i ~/.ssh/certificates/[filename].pem execution_script_aws.sh ubuntu@[ipaddress]:~/Documents/scripts
 
-#Install CUDA
+#Install CUDA v9.2
 cd ~
 wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64
 sudo apt-key add /var/cuda-repo-9-2-local/7fa2af80.pub
@@ -44,12 +44,17 @@ sudo apt-get install cuda
 luarocks install cutorch
 luarocks install cunn
 
-#Install cuDNN
-scp -i ~/.ssh/certificates/[filename].pem ~/Documents/neural-style/cudnn-7.0-linux-x64-v4.0-prod.tgz ubuntu@[ipaddress]:~/Documents/
-cd ~/Documents && tar -xzvf cudnn-7.0-linux-x64-v4.0-prod.tgz
-sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
-sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
-luarocks install cudnn
+#Install cuDNN v7.1.4 (May 16, 2018), for CUDA 9.2
+tar -xzvf cudnn-9.2-linux-x64-v7.1.tgz
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+sudo chmod a+r /usr/local/cuda/include/cudnn.h
+export CUDNN_PATH="/usr/local/cuda-9.2/lib64/libcudnn.so.7"
+
+#luarocks install cudnn //Maybe you need to run this command, but not sure.
+
+# test if cuDNN is available
+th -lcudnn -e "print(cudnn.version)"
 
 #ownload model through a script as the model is stored on google drive
 touch download.sh && nano download.sh
